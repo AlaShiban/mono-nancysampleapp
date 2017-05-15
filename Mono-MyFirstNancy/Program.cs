@@ -7,10 +7,10 @@ namespace MonoMyFirstNancy
     {
         public static void Main(string[] args)
         {
-			using (var host = new NancyHost(new Uri("http://127.0.0.1:4321")))
+			using (var host = new NancyHost(new Uri("http://0.0.0.0:4321")))
 			{
 				host.Start();
-				Console.WriteLine("Running on http://127.0.0.1:4321");
+				Console.WriteLine("Running on http://0.0.0.0:4321");
 				Console.ReadLine();
 			}
         }
